@@ -1,0 +1,55 @@
+filter:
+  services:
+    selector_filter: !!seq
+      - filter_amount_range: Сумма
+      - filter_currency_id: Валюта
+      - filter_contractor: Контрагент
+      - filter_author_id: Куратор
+      - filter_service_source_id: Направление
+      - filter_nomenclature_id: Номенклатура
+      - filter_is_signed: Подпись
+      - filter_is_deleted: Удалённые
+      - filter_project_id: Проект
+      - filter_expenditure: Статья затрат
+      - filter_purpose: Назначение
+      - filter_service_is_operation_exist: Наличие ДДС
+
+    selector_filter_first_level: !!seq
+      - service_is_operation_exist: !!seq
+          - "Отсутствует"
+          - "Присутствует"
+      - nomenclature_id: !!seq
+          - "Зарплата.ру — Омская область"
+      - service_source_id: !!seq
+          - "Мы"
+          - "Нам"
+      - currency_id: !!seq
+          - "Безналичный рубль [RUR]"
+          - "Наличный рубль [nRUR]"
+          - "Доллар [USD]"
+          - "Евро [EUR]"
+          - "WMZ [WMZ]"
+          - "WMR [WMR]"
+          - "Яндекс.Деньги [YAD]"
+      - author_id: !!seq
+          - "dev_16@local.host"
+          - "dev_41@local.host"
+          - "dev_1@local.host"
+      - is_signed: !!seq
+          - "Не подписана"
+          - "Подписана"
+      - is_deleted: !!seq
+          - "Только удалённые"
+          - "Только нормальные"
+      - project_id: !!seq
+          - "Development"
+          - "Антананариву"
+          - "Виктория"
+          - "Виндхук"
+          - "Дакар"
+          - "Джуба"
+          - "Каир"
+          - "Кампала"
+          - "Конакри"
+          - "Либревиль"
+          - "Админ"

@@ -1,0 +1,61 @@
+base:
+  get: browser.get('/')
+  title: 'Б.СПОК'
+
+sign_in:
+  get: browser.get('/users/sign_in')
+  title: 'Вход в систему | Б.СПОК'
+  click_submit: 'browser.actions().mouseMove(element.all(by.css("button.btn-primary")).get(0), {x: 10, y: 10,}).click().perform();'
+
+sign_up:
+  get: browser.get('/users/sign_up')
+  title: 'Регистрация | Б.СПОК'
+  click_submit: 'browser.actions().mouseMove(element.all(by.css("button.btn-primary")).get(0), {x: 10, y: 10,}).click().perform();'
+
+users:
+  get: browser.get('/system/users')
+  title: 'Пользователи | Б.СПОК'
+
+employee:
+  get: browser.get('/employees')
+  title: 'Кадры | Б.СПОК'
+  new:
+    get: browser.get('/employees/new')
+    title: 'Добавление сотрудника | Б.СПОК'
+  salary:
+    get: browser.get('/employees/salary')
+    title: 'Заработная плата | Б.СПОК'
+
+demands:
+  get: browser.get('/demands?per_page=3&all=1')
+  title: 'Заявки | Б.СПОК'
+  new:
+    get: browser.get('/demands/new')
+    title: 'Добавление заявки | Б.СПОК'
+
+operations:
+  get: browser.get('/fin_indicators/operations?per_page=3&all=1')
+  title: 'ДДС | Б.СПОК'
+
+services:
+  get: browser.get('/services?per_page=3&all=1')
+  title: 'Услуги | Б.СПОК'
+  new:
+    get: browser.get('/services/new')
+    title: 'Добавление услуги | Б.СПОК'
+
+DDS:
+  get: browser.get('/fin_indicators/operations')
+  title: 'ДДС | Б.СПОК'
+
+receipts:
+  title: 'Поступление | Б.СПОК'
+  get: browser.get('/fin_operations/receipts/new')
+
+conversion:
+  title: 'Конвертация | Б.СПОК'
+  get: browser.get('/fin_operations/money_transfers/new')
+
+references:
+  get: browser.get('references/projects')
+  title: "Проекты | Б.СПОК"

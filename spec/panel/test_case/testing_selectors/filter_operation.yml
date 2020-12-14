@@ -1,0 +1,51 @@
+filter:
+  operations:
+    selector_filter: !!seq
+    - filter_amount_range: Сумма
+    - filter_currency_id: Валюта
+    - filter_contractor: Контрагент
+    - filter_author_id: Куратор
+    - filter_nomenclature_id: Номенклатура
+    - filter_is_deleted: Удалённые
+    - filter_operation_amount_id: Приход/Расход
+    - filter_project_id: Проект
+    - filter_expenditure: Статья затрат
+    - filter_account: Счет
+    - filter_sender_account_type_id: Тип счета отправителя
+    - filter_purpose: Назначение
+
+    selector_filter_first_level: !!seq
+      - sender_account_type_id: !!seq
+          - "Подотчетник"
+      - operation_amount_id: !!seq
+          - "Расход"
+          - "Приход"
+      - nomenclature_id: !!seq
+          - "Зарплата.ру — Омская область"
+      - currency_id: !!seq
+          - "Безналичный рубль [RUR]"
+          - "Наличный рубль [nRUR]"
+          - "Доллар [USD]"
+          - "Евро [EUR]"
+          - "WMZ [WMZ]"
+          - "WMR [WMR]"
+          - "Яндекс.Деньги [YAD]"
+      - author_id: !!seq
+          - "dev_16@local.host"
+          - "dev_41@local.host"
+          - "dev_1@local.host"
+      - is_deleted: !!seq
+          - "Только удалённые"
+          - "Только нормальные"
+      - project_id: !!seq
+          - "Development"
+          - "Антананариву"
+          - "Виктория"
+          - "Виндхук"
+          - "Дакар"
+          - "Джуба"
+          - "Каир"
+          - "Кампала"
+          - "Конакри"
+          - "Либревиль"
+          - "Админ"

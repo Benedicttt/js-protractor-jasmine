@@ -1,0 +1,446 @@
+demand:
+  return:
+    case_1:
+      selector: !!seq
+        - demand_project_id:         "Админ"
+        - demand_account_id:         "Безналичн"
+        - demand_contractor_type_id: " Покупатель"
+        - demand_contractor_id:      " L1"
+
+      checkbox: !!seq
+        - demand_is_refund:                true
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  true
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info:     "for test case  1 in demand return"
+        - demand_purse_number:          "1234 1234 1234 1234"
+        - demand_purpose:               "for test case  1 in demand return"
+        - demand_amount:                1001
+        - demand_comment:               "for test case  1 in demand return"
+        - demand_task:                  123
+        - demand_refundable_service_id: "us"
+
+      attributes: !!seq
+        - advances:              true
+        - add_inventory:         true
+        - demand_is_distributed: false
+        - click_buttons:         true
+        - check_statuses_return: true
+        - check_popup:           true
+        - check_notify:          false
+
+      check_data_popup_service: true
+      check_data_popup_dds:     true
+      check_data_popup_demand:  true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+    case_2:
+      selector: !!seq
+        - demand_project_id:         "Админ"
+        - demand_account_id:         "Безналичн"
+        - demand_contractor_type_id: " Покупатель"
+        - demand_contractor_id:      " L1"
+
+      checkbox: !!seq
+        - demand_is_refund:                true
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  true
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info:     "for test case  1 in demand return"
+        - demand_purse_number:          "1234 1234 1234 1234"
+        - demand_purpose:               "for test case  1 in demand return"
+        - demand_amount:                1003
+        - demand_comment:               "for test case  1 in demand return"
+        - demand_task:                  3214
+        - demand_refundable_service_id: "us"
+
+      attributes: !!seq
+        - advances:              false
+        - add_inventory:         true
+        - demand_is_distributed: false
+        - click_buttons:         true
+        - check_statuses_return: true
+        - check_popup:           true
+        - check_notify:          false
+
+      check_data_popup_service: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+    case_3:
+      selector: !!seq
+        - demand_project_id:         "Админ"
+        - demand_account_id:         "Безналичн"
+        - demand_contractor_type_id: " Покупатель"
+        - demand_contractor_id:      " L1"
+
+      checkbox: !!seq
+        - demand_is_refund: true
+        - demand_is_payment_on_site:       false
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  true
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+#        - demand_payment_site_info:     "for test case  1 in demand return"
+        - demand_purse_number:          "1234 1234 1234 1234"
+        - demand_purpose:               "for test case  1 in demand return"
+        - demand_amount:                1001
+#        - demand_comment:               "for test case  1 in demand return"
+        - demand_task:                  123
+        - demand_refundable_service_id: "us"
+
+      attributes: !!seq
+        - advances:              true
+        - add_inventory:         false
+        - demand_is_distributed: false
+        - click_buttons:         true
+        - check_statuses_return: true
+        - check_popup:           true
+        - check_notify:          true
+
+      check_data_popup_service: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+
+
+  service:
+    case_1:
+      selector: !!seq
+        - demand_project_id:          "Админ"
+        - demand_account_id:          "Безналичн"
+        - demand_contractor_type_id:  " Покупатель"
+        - demand_contractor_id:       " L1"
+        - demand_expenditure_type_id: " Арендные платежи"
+        - demand_expenditure_id:      " Аренда"
+
+      checkbox: !!seq
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  true
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info: "for test case  1 in demand return"
+        - demand_purse_number:      "1234 1234 1234 1234"
+        - demand_purpose:           "for test case  1 in demand return"
+        - demand_amount:            1001
+        - demand_comment:           "for test case  1 in demand return"
+        - demand_task:              123
+
+      attributes: !!seq
+        - advances:               false
+        - add_inventory:          false
+        - demand_is_distributed:  1,Админ
+        - click_buttons:          true
+        - check_statuses_service: true
+        - check_popup:            true
+        - check_notify:           false
+
+      check_data_popup_service: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+    case_2:
+      selector: !!seq
+        - demand_project_id:          "Админ"
+        - demand_account_id:          "Безналичн"
+        - demand_contractor_type_id:  " Покупатель"
+        - demand_contractor_id:       " L1"
+        - demand_expenditure_type_id: " Арендные платежи"
+        - demand_expenditure_id:      " Аренда"
+
+      checkbox: !!seq
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  true
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info: "for test case  1 in demand return"
+        - demand_purse_number:      "1234 1234 1234 1234"
+        - demand_purpose:           "for test case  1 in demand return"
+        - demand_amount:            1002
+        - demand_comment:           "for test case  1 in demand return"
+        - demand_task:              1234
+
+      attributes: !!seq
+        - advances:               false
+        - add_inventory:          false
+        - demand_is_distributed:  1,Админ
+        - click_buttons:          true
+        - check_statuses_service: true
+        - check_popup:            true
+        - check_notify:           false
+
+      check_data_popup_service: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+    case_3:
+      selector: !!seq
+        - demand_project_id:          "Админ"
+        - demand_account_id:          "Безналичн"
+        - demand_contractor_type_id:  " Покупатель"
+        - demand_contractor_id:       " L1"
+        - demand_expenditure_type_id: " Арендные платежи"
+        - demand_expenditure_id:      " Аренда"
+
+      checkbox: !!seq
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  true
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info: "for test case  1 in demand return"
+        - demand_purse_number:      "1234 1234 1234 1234"
+        - demand_purpose:           "for test case  1 in demand return"
+        - demand_amount:            1001
+        - demand_comment:           "for test case  1 in demand return"
+        - demand_task:              123
+
+      attributes: !!seq
+        - advances:               false
+        - add_inventory:          true
+        - demand_is_distributed:  false
+        - click_buttons:          true
+        - check_statuses_service: true
+        - check_popup:            true
+        - check_notify:           false
+
+      check_data_popup_service: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+    case_4:
+      selector: !!seq
+        - demand_project_id:          "Админ"
+        - demand_account_id:          "Безналичн"
+        - demand_contractor_type_id:  " Покупатель"
+        - demand_contractor_id:       " L1"
+        - demand_expenditure_type_id: " Арендные платежи"
+        - demand_expenditure_id:      " Аренда"
+
+      checkbox: !!seq
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  true
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info: "for test case  1 in demand return"
+        - demand_purse_number:      "1234 1234 1234 1234"
+        - demand_purpose:           "for test case  1 in demand return"
+        - demand_amount:            1001
+        - demand_comment:           "for test case  1 in demand return"
+        - demand_task:              123
+
+      attributes: !!seq
+        - advances:               true
+        - add_inventory:          false
+        - demand_is_distributed:  1,Админ
+        - click_buttons:          true
+        - check_statuses_service: true
+        - check_popup:            true
+        - check_notify:           false
+
+      check_data_popup_service: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+    case_5:
+      selector: !!seq
+        - demand_project_id:          "Админ"
+        - demand_account_id:          "Безналичн"
+        - demand_contractor_type_id:  " Покупатель"
+        - demand_contractor_id:       " L1"
+        - demand_expenditure_type_id: " Арендные платежи"
+        - demand_expenditure_id:      " Аренда"
+
+      checkbox: !!seq
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  true
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info: "for test case  1 in demand return"
+        - demand_purse_number:      "1234 1234 1234 1234"
+        - demand_purpose:           "for test case  1 in demand return"
+        - demand_amount:            1001
+        - demand_comment:           "for test case  1 in demand return"
+        - demand_task:              123
+
+      attributes: !!seq
+        - advances:               fasle
+        - add_inventory:          false
+        - demand_is_distributed:  false
+        - click_buttons:          true
+        - check_statuses_service: true
+        - check_popup:            true
+        - check_notify:           false
+
+      check_data_popup_service: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+    case_6:
+      selector: !!seq
+        - demand_project_id:          "Админ"
+        - demand_account_id:          "Евро"
+        - demand_contractor_type_id:  " Подотчетник"
+        - demand_contractor_id:       "Александр"
+        - demand_expenditure_type_id: " Арендные платежи"
+        - demand_expenditure_id:      " Аренда"
+
+      checkbox: !!seq
+        - demand_is_salary:                true
+
+      input: !!seq
+        - demand_purse_number:      "1234 1234 1234 1234"
+        - demand_purpose:           "for test case  1 in demand return"
+        - demand_amount:            1001
+        - demand_comment:           "for test case  1 in demand return"
+        - demand_task:              123
+
+      attributes: !!seq
+        - advances:               fasle
+        - add_inventory:          false
+        - demand_is_distributed:  1,Админ
+        - click_buttons:          true
+        - check_statuses_service: true
+        - check_popup:            true
+        - check_notify:           false
+
+      check_data_popup_service: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+      check_data_nds_we:        false
+      check_data_nds_us:        false
+
+    case_7:
+      selector: !!seq
+        - demand_project_id:          "Админ"
+        - demand_account_id:          "Евро"
+        - demand_contractor_type_id:  " Покупатель"
+        - demand_contractor_id:       " L1"
+        - demand_expenditure_type_id: " Арендные платежи"
+        - demand_expenditure_id:      " X1"
+
+      checkbox: !!seq
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  false
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info: "for test case  1 in demand return"
+        - demand_purse_number:      "1234 1234 1234 1234"
+        - demand_purpose:           "for test case  1 in demand return"
+        - demand_amount:            1001
+        - demand_comment:           "for test case  1 in demand return"
+        - demand_task:              123
+
+      attributes: !!seq
+        - advances:               false
+        - add_inventory:          false
+        - demand_is_distributed:  0.5,Ломе; 0.3,Development; 0.2,Админ
+        - click_buttons:          true
+        - sign_is_distributed:    true
+        - check_statuses_service: false
+        - check_popup:            true
+        - check_notify:           false
+
+      check_data_popup_services: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
+
+    case_8:
+      selector: !!seq
+        - demand_project_id:          "Админ"
+        - demand_account_id:          "Евро"
+        - demand_contractor_type_id:  " Покупатель"
+        - demand_contractor_id:       " L1"
+        - demand_expenditure_type_id: " Арендные платежи"
+        - demand_expenditure_id:      " Аренда"
+
+      checkbox: !!seq
+        - demand_is_payment_on_site:       true
+        - demand_is_plan_paid_date:        true
+        - demand_is_regular_payment:       true
+        - demand_is_monthly_payment:       true
+        - demand_is_salary:                true
+        - demand_is_profits_distribution:  false
+        - demand_is_plan_paid_date_period: true
+
+      input: !!seq
+        - demand_payment_site_info: "for test case  1 in demand return"
+        - demand_purse_number:      "1234 1234 1234 1234"
+        - demand_purpose:           "for test case  1 in demand return"
+        - demand_amount:            1001
+        - demand_comment:           "for test case  1 in demand return"
+        - demand_task:              123
+
+      attributes: !!seq
+        - advances:               false
+        - add_inventory:          false
+        - demand_is_distributed:  0.425,Ломе; 0.375,Development; 0.2,Админ
+        - click_buttons:          true
+        - sign_is_distributed:    true
+        - check_statuses_service: false
+        - check_popup:            true
+        - check_notify:           false
+
+      check_data_popup_services: true
+      check_data_popup_demand:  true
+      check_data_popup_dds:     true
